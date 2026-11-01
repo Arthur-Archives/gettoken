@@ -73,7 +73,7 @@ export default async function handler(req, res) {
 
   // --- Lógica Padrão (Proxy para internal.1lucas1apk.fun) ---
   try {
-    const upstream = "https://internal.1lucas1apk.fun/api/token";
+    const upstream = "https://api-gettoken-spotify-token.triniumhost.com/api/token";
     const url = new URL(upstream);
     for (const [k, v] of Object.entries(req.query || {})) {
       // Repassa todos os params, exceto se quiséssemos filtrar algo
