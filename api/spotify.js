@@ -6,7 +6,8 @@ let currentTotpVersion = null;
 let lastSecretFetchTime = 0;
 const SECRET_FETCH_INTERVAL = 60 * 60 * 1000; // 1 hora
 
-const SECRETS_URL = "https://raw.githubusercontent.com/xyloflake/spot-secrets-go/refs/heads/main/secrets/secretDict.json";
+const SECRETS_URL1 = "https://raw.githubusercontent.com/xyloflake/spot-secrets-go/refs/heads/main/secrets/secretDict.json";
+const SECRETS_URL = "https://raw.githubusercontent.com/Arthur-Archives/spot-secrets-go/refs/heads/main/secrets/secretDict.json";
 const USER_AGENT_MOBILE = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36";
 
 export default async function handler(req, res) {
